@@ -1,0 +1,29 @@
+.name {
+  font-size: 1.7em;
+  font-weight: 900;
+}
+.underlineOnHover:hover {
+  border-bottom: 2px solid blue;
+}
+ul {
+  list-style: none;
+  color: white;
+}
+.left {
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  align-items: center;
+  justify-content: center;
+}
+.right > .nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-size: 0.7em;
+  color: white;
+}
