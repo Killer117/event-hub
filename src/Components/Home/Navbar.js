@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import Profile from './Profile';
+
 import {
   BsPeopleCircle,
   BsFillBellFill,
   BsFillEnvelopeFill,
 } from "react-icons/bs";
 
-function Navbar() {
+function Navbar ()
+{
+  const [ color, setColor ] = useState(0);
   const navbarContentsLeft = [
     {
-      to: "/home",
+      to: "/",
       name: "Home",
     },
     {
@@ -56,42 +60,15 @@ function Navbar() {
               );
             })}
           </ul>
-          <hr className="d-xl-none w-75 m-auto " color="grey" />
+          <hr className="d-block d-xl-none d-lg-none w-75 m-auto " color="grey" />
           <div className="navbar-nav right d-flex flex-row">
-            <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30">
-              <BsFillBellFill size="25px" color="white" />
-              <label>Notification</label>
+            <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30 ">
+              <BsFillBellFill size="25px" color={ color===1?"grey":"white"} onMouseEnter={()=>setColor(1)} onMouseLeave={()=>setColor(0)}  />
             </Link>
             <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30">
-              <BsFillEnvelopeFill size="25px" color="white" />
-              <label>Chats</label>
+              <BsFillEnvelopeFill size="25px" color={ color===2?"grey":"white"} onMouseEnter={()=>setColor(2)} onMouseLeave={()=>setColor(0)}  />
             </Link>
-            <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30">
-              <div className="dropleft">
-                <BsPeopleCircle
-                  size="25px"
-                  color="white"
-                  className="dropdown-toggle"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                />
-
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <Link className="dropdown-item" to="/">
-                    Profile
-                  </Link>
-                  <Link className="dropdown-item" to="/">
-                    sign out
-                  </Link>
-                </div>
-              </div>
-              <label>Account</label>
-            </Link>
+            
           </div>
         </div>
       </nav>
