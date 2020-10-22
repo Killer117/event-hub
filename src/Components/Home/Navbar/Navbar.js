@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import Profile from "./Profile";
 import Notification from "./Notification";
 import Chats from "./Chats";
