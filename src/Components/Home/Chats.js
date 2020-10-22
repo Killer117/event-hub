@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillBellFill } from "react-icons/bs";
+import { BsFillEnvelopeFill } from "react-icons/bs";
 
-function Notification() {
+function Chats() {
   const [color, setColor] = useState(0);
   return (
     <div>
       <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30 ">
         <div className="dropleft">
-          <BsFillBellFill
+          <BsFillEnvelopeFill
             size="25px"
             className="dropdown-toggle onHover"
             id="dropdownMenuButton"
@@ -19,6 +19,7 @@ function Notification() {
             onMouseEnter={() => setColor(1)}
             onMouseLeave={() => setColor(0)}
           />
+
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <Link className="dropdown-item" to="/">
               Hello
@@ -32,4 +33,4 @@ function Notification() {
     </div>
   );
 }
-export default Notification;
+export default Chats;

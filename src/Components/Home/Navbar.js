@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Profile from './Profile';
+import Profile from "./Profile";
+import Notification from "./Notification";
+import Chats from "./Chats";
 
-import {
-  BsPeopleCircle,
-  BsFillBellFill,
-  BsFillEnvelopeFill,
-} from "react-icons/bs";
-
-function Navbar ()
-{
-  const [ color, setColor ] = useState(0);
+function Navbar() {
+  const [active, setActive] = useState(0);
   const navbarContentsLeft = [
     {
       to: "/",
@@ -52,7 +47,11 @@ function Navbar ()
           <ul className="navbar-nav mr-auto left">
             {navbarContentsLeft.map((item, index) => {
               return (
-                <li className="nav-item active" key={index}>
+                <li
+                  className={`nav-item ${active ? "active" : ""}`}
+                  key={index}
+                  onClick={(prevActive) => setActive(!prevActive)}
+                >
                   <Link className="nav-link underlineOnHover" to={item.to}>
                     {item.name}
                   </Link>
@@ -60,15 +59,16 @@ function Navbar ()
               );
             })}
           </ul>
-          <hr className="d-block d-xl-none d-lg-none w-75 m-auto " color="grey" />
+
+          <hr
+            className="d-block d-xl-none d-lg-none w-75 m-auto "
+            color="grey"
+          />
+
           <div className="navbar-nav right d-flex flex-row">
-            <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30 ">
-              <BsFillBellFill size="25px" color={ color===1?"grey":"white"} onMouseEnter={()=>setColor(1)} onMouseLeave={()=>setColor(0)}  />
-            </Link>
-            <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30">
-              <BsFillEnvelopeFill size="25px" color={ color===2?"grey":"white"} onMouseEnter={()=>setColor(2)} onMouseLeave={()=>setColor(0)}  />
-            </Link>
-            
+            <Notification />
+            <Chats />
+            <Profile />
           </div>
         </div>
       </nav>
