@@ -4,11 +4,11 @@ function Home_One() {
   return (
     <div>
       <div className="home__body__one  text-center d-flex flex-column justify-content-center align-items-center vh-100">
-        <p className="heading p-2">A HUB FOR ALL SORT OF EVENTS</p>
-        <p className="sub_heading">
+        <p className="heading p-2 ">A HUB FOR ALL SORT OF EVENTS</p>
+        <p className="sub_heading d-none d-sm-none d-lg-block">
           No need to surf websites for events booking
         </p>
-        <p className="sub_sub_heading">
+        <p className="sub_sub_heading d-none d-sm-none d-lg-block">
           You can get all the events under a single hood
         </p>
         <button type="submit" className="p-2 mt-4 border-0 getStarted">

@@ -3,14 +3,17 @@ import Navbar from "./Navbar/Navbar";
 import "./Home.css";
 import HomeOne from "./Home_One";
 import HomeTwo from "./Home_Two";
+import HomeThree from "./Home_Three";
+import Bottom from "./Bottom";
 
 function Home() {
   return (
-    <div className="home__header">
+    <div className="home">
       <Navbar />
       <div className="home__body">
         <HomeOne />
         <HomeTwo />
+        <HomeThree />
       </div>
     </div>
   );

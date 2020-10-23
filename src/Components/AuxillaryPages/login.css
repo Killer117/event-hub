@@ -1,9 +1,8 @@
-/* .login_header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.bgImage{
+.login_header {
+  width: 100%;
+  height: 100%;
+}
+.bgImage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,11 +15,11 @@
   width: 380px;
   background: #eee;
   margin-top: 100px;
-  margin-bottom: 90px;
+  /* margin-bottom: 50px; */
   border: 2px solid #fff;
   opacity: 0.85;
   border-radius: 15px;
-  max-height: 500px;
+  /* max-height: 500px; */
   box-shadow: 0px 0px 10px white;
 }
 .wrapper .title {
