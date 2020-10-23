@@ -52,7 +52,7 @@ function Home_Three() {
             className="active"
           ></li>
           {imageContents.map((item) => {
-            if (item.key != 1) {
+            if (item.key !== 1) {
               return (
                 <li
                   data-target="#carouselExampleCaptions"

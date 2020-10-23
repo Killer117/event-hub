@@ -4,7 +4,7 @@ import "./Home.css";
 import HomeOne from "./Home_One";
 import HomeTwo from "./Home_Two";
 import HomeThree from "./Home_Three";
-import Bottom from "./Bottom";
+// import Bottom from "./Bottom";
 
 function Home() {
   return (
