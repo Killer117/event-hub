@@ -7,6 +7,7 @@ function Login() {
   return (
     <div className="login_header">
       <Navbar />
+      <div className="bgImage">
       <div className="wrapper">
         <div className="title">EventHub</div>
         <form action="#">
@@ -34,6 +35,7 @@ function Login() {
             <Link to="/">Create Account</Link>
           </div>
         </form>
+      </div>
       </div>
     </div>
   );
