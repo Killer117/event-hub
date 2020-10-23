@@ -1,0 +1,76 @@
+/* Home */
+
+/* Navbar */
+
+.name {
+  font-size: 1.7em;
+  font-weight: 900;
+}
+.underlineOnHover:hover {
+  border-bottom: 2px solid blue;
+}
+ul {
+  list-style: none;
+  color: white;
+}
+.left {
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  align-items: center;
+  justify-content: center;
+}
+.right > .nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home__One */
+.home__body__one {
+  color: white;
+  background: url("../../pictures/topBG.png") no-repeat center top;
+  background-size: cover;
+  word-spacing: 10px;
+}
+.heading {
+  font-size: 4em;
+  font-weight: 900;
+  color: white;
+}
+.sub_heading {
+  font-size: 1.6em;
+  font-weight: 900;
+  color: white;
+  font-family: cursive !important;
+}
+.sub_sub_heading {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: cursive !important;
+}
+.getStarted {
+  background: aqua;
+  border-radius: 30em;
+  color: black;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 20px 3px black;
+  word-spacing: 5px;
+}
+
+/* Home__Two */
+.events_text {
+  font-size: 2em;
+  font-family: cursive !important;
+  font-weight: 900;
+}
+.cardsSet {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20rem;
+  box-shadow: 0px 0px 3px black;
+}
