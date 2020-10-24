@@ -59,8 +59,6 @@ function Home_Three() {
                   data-slide-to={item.key}
                 ></li>
               );
-            } else {
-              return "";
             }
           })}
         </ol>

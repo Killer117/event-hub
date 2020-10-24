@@ -21,11 +21,14 @@ function Profile() {
           />
 
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <Link className="dropdown-item" to="/">
+            <Link className="dropdown-item" to="/profile_page">
               Profile
             </Link>
             <Link className="dropdown-item" to="/login">
               sign in
+            </Link>
+            <Link className="dropdown-item" to="/registeration">
+              register
             </Link>
           </div>
         </div>

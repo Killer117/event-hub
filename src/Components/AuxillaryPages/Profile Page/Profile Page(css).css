@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+.profilePage {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.profilePage-profilePage-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+.profilePage-profilePage-wrapper .profilePage-profilePage-left {
+  width: 30%;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.profilePage-profilePage-wrapper .profilePage-profilePage-left img {
+  width: 60%;
+  height: 60%;
+  padding: 40px 1px 30px 1px;
+  border-radius: 5px;
+}
+
+.profilePage-profilePage-wrapper .profilePage-profilePage-left h4 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.profilePage-profilePage-wrapper .profilePage-profilePage-right {
+  width: 70%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.profilePage-wrapper .profilePage-right .profilePage-info {
+  margin-bottom: 25px;
+}
+
+.profilePage-wrapper .profilePage-right .profilePage-info h3 {
+  font-size: 70px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.profilePage-wrapper .profilePage-right .profilePage-info_data {
+  display: flex;
+  justify-content: space-between;
+}
+.profilePage-edit {
+  display: flex;
+  flex-direction: row;
+}
+.profilePage-wrapper
+  .profilePage-right
+  .profilePage-info_data
+  .profilePage-data {
+  width: 45%;
+}
+
+.profilePage-wrapper
+  .profilePage-right
+  .profilePage-info_data
+  .profilePage-data
+  h4 {
+  font-size: 30px;
+  color: #353c4e;
+  margin-bottom: 5px;
+}
+
+.profilePage-wrapper
+  .profilePage-right
+  .profilePage-info_data
+  .profilePage-data
+  h2 {
+  display: inline-block;
+  padding-left: 300px;
+  font-size: 25px;
+  color: #3e3e3e;
+  margin-bottom: 5px;
+}
+
+.profilePage-wrapper
+  .profilePage-right
+  .profilePage-info_data
+  .profilePage-data
+  img {
+  display: inline-block;
+  padding-top: 3px;
+  width: 9%;
+  height: 9%;
+}
+
+.profilePage-wrapper
+  .profilePage-right
+  .profilePage-info_data
+  .profilePage-data
+  h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.profilePage-wrapper .profilePage-social_media ul {
+  display: flex;
+}
+
+.profilePage-wrapper .profilePage-social_media ul li {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.profilePage-wrapper .profilePage-social_media ul li a {
+  color: #fff;
+  padding-top: 9px;
+  display: block;
+  font-size: 28px;
+}

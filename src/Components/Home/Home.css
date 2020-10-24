@@ -98,7 +98,7 @@ ul {
 }
 .card {
   width: 20rem;
-  box-shadow: 0px 0px 5px black;
+  /* box-shadow: 0px 0px 5px black; */
   background: #eee !important;
 }
 
@@ -110,8 +110,8 @@ ul {
   max-height: 150px;
 }
 .image {
-  width: 500px !important;
-  height: 350px !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 .carousel-inner {
   box-shadow: 0px 0px 25px black;

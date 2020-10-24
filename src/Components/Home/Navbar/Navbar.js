@@ -12,7 +12,7 @@ function Navbar() {
       name: "Home",
     },
     {
-      to: "/about",
+      to: "/about_us",
       name: "About",
     },
     {

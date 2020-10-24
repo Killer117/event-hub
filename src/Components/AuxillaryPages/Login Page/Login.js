@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./login.css";
-import Navbar from "../Home/Navbar/Navbar";
+import Navbar from "../../Home/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 function Login() {
