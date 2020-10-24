@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import Navbar from "../Home/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 function Login() {
+  useEffect(() => {
+    document.title = "Login EventHub";
+  }, []);
   return (
     <div className="login_header">
       <Navbar />
