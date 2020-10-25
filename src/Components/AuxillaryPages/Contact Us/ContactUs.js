@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Home/Navbar/Navbar";
 import "./ContactUs.css";
-import bgimage from "../../../pictures/eventPlanning3.jpg";
+import bgimage from "../../../pictures/PagesBG.jpg";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 import { FaHome } from "react-icons/fa";

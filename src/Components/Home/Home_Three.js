@@ -1,29 +1,33 @@
 import React from "react";
 import topBG from "../../pictures/topBG.png";
+import one from "../../pictures/one.jpg";
+import two from "../../pictures/two.jpg";
+import three from "../../pictures/three.jpg";
+import four from "../../pictures/four.jpg";
 
 function Home_Three() {
   const imageContents = [
     {
       key: 1,
-      image: topBG,
+      image: one,
       header: "First slide label",
       content: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
     {
       key: 2,
-      image: topBG,
+      image: two,
       header: "First slide label",
       content: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
     {
       key: 3,
-      image: topBG,
+      image: three,
       header: "First slide label",
       content: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
     {
       key: 4,
-      image: topBG,
+      image: four,
       header: "First slide label",
       content: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
@@ -59,15 +63,18 @@ function Home_Three() {
                   data-slide-to={item.key}
                 ></li>
               );
+            } else {
+              return "";
             }
           })}
         </ol>
         <div className="carousel-inner">
-          {imageContents.map((item, index) => {
+          {imageContents.map((item) => {
             return (
               <div
                 key={item.key}
                 className={`carousel-item ${item.key === 1 ? "active" : ""}`}
+                data-interval="3000"
               >
                 <img
                   src={item.image}

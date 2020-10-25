@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Home/Navbar/Navbar";
-import bgimage from "../../../pictures/eventPlanning3.jpg";
+import bgimage from "../../../pictures/PagesBG.jpg";
 import "./FAQs.css";
 
 function FAQs() {

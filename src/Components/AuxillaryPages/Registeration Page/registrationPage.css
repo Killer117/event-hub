@@ -1,10 +1,30 @@
 .regPage {
+  margin: 0%;
+  padding: 0%;
   width: 100%;
   height: 100%;
+  display: flex;
 }
-.regPage-bg {
-  background: url("../../../pictures/topBG.png") no-repeat center top;
-  background-size: cover;
+.regPage-content {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.regPage-corousel {
+  flex-grow: 1;
+}
+.regPage-form {
+  flex-grow: 3;
+}
+.regpage-corousel-item {
+  height: 100%;
+  width: 80%;
+}
+.regPage-Image {
+  height: 100%;
+  width: 100%;
 }

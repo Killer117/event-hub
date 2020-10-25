@@ -1,0 +1,10 @@
+.notification-dropMenu {
+  width: 270px;
+  max-height: 350px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-top: 50px !important;
+}
+.notification-card {
+  width: 250px;
+}

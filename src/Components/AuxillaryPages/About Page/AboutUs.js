@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Home/Navbar/Navbar";
 import "./AboutUs.css";
-import bgimage from "../../../pictures/eventPlanning3.jpg";
-import image1 from "../../../pictures/topBG.png";
+import bgimage from "../../../pictures/PagesBG.jpg";
+import image1 from "../../../pictures/two.jpg";
+import image2 from "../../../pictures/three.jpg";
 
 function AboutUs() {
   const aboutContent = [
@@ -14,7 +15,7 @@ function AboutUs() {
     },
     {
       key: 2,
-      image: image1,
+      image: image2,
       content:
         "It’s your go-to platform, if you want to organize an event and don’t know which organising company will be best suited for you. At EventHub you will find all available plans of Inmarket organising companies for different events according to your requirements at your very screen.",
     },
@@ -44,6 +45,7 @@ function AboutUs() {
               <img
                 src={item.image}
                 className="aboutUs-Content-image p-2 m-3 justify-content-center align-items-center"
+                alt="photos"
               />
             </div>
           );

@@ -1,5 +1,5 @@
 import React from "react";
-import Home_Two from "./Home_Two";
+// import Home_Two from "./Home_Two";
 function Home_One({ handleClick }) {
   return (
     <div>

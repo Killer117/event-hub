@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Profile from "./Profile";
-import Notification from "./Notification";
-import Chats from "./Chats";
+import Profile from "./Profile/Profile";
+import Notification from "./Notification/Notification";
+import Chats from "./Chats/Chats";
 
 function Navbar({ activeTab }) {
-  console.log(activeTab);
   const navbarContentsLeft = [
     {
       to: "/",

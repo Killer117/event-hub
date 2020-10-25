@@ -43,6 +43,11 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.notification-dropMenu {
+  overflow: scroll;
+  height: 250px;
+  max-width: min-content;
+}
 
 /* Home__One */
 .home__body__one {
