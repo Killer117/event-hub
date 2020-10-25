@@ -4,8 +4,8 @@ import Profile from "./Profile";
 import Notification from "./Notification";
 import Chats from "./Chats";
 
-function Navbar() {
-  const [active, setActive] = useState(0);
+function Navbar({ activeTab }) {
+  console.log(activeTab);
   const navbarContentsLeft = [
     {
       to: "/",
@@ -13,7 +13,7 @@ function Navbar() {
     },
     {
       to: "/about_us",
-      name: "About",
+      name: "About Us",
     },
     {
       to: "/faqs",
@@ -47,11 +47,17 @@ function Navbar() {
             {navbarContentsLeft.map((item, index) => {
               return (
                 <li
-                  className={`nav-item ${active ? "active" : ""}`}
+                  className={`nav-item ${
+                    activeTab === item.name ? "active" : ""
+                  } underlineOnHover`}
                   key={index}
-                  onClick={(prevActive) => setActive(!prevActive)}
                 >
-                  <Link className="nav-link underlineOnHover" to={item.to}>
+                  <Link
+                    className={`nav-link ${
+                      activeTab === item.name ? "underline" : ""
+                    }`}
+                    to={item.to}
+                  >
                     {item.name}
                   </Link>
                 </li>

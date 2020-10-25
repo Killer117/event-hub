@@ -1,0 +1,45 @@
+.contactUs {
+  width: 100%;
+  height: max-content;
+  color: black;
+  background: white !important;
+}
+.contactUs-first {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.contactUs-image {
+  width: 100%;
+  height: 100%;
+}
+.contactUs-image-content {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+.contactUs-text {
+  font-size: 4em;
+  text-align: center;
+}
+.contactUs-text-by {
+  font-size: 1em;
+  margin-left: 30%;
+}
+.contactUs-details {
+  display: flex;
+}
+ul {
+  list-style: none;
+  color: black;
+}
+.contactUs-socialMedia {
+  bottom: 0%;
+  margin-bottom: 0%;
+}

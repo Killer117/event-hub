@@ -1,6 +1,6 @@
 import React from "react";
-
-function Home_One() {
+import Home_Two from "./Home_Two";
+function Home_One({ handleClick }) {
   return (
     <div>
       <div className="home__body__one  text-center d-flex flex-column justify-content-center align-items-center vh-100">
@@ -11,7 +11,11 @@ function Home_One() {
         <p className="sub_sub_heading d-none d-sm-none d-lg-block">
           You can get all the events under a single hood
         </p>
-        <button type="submit" className="p-2 mt-4 border-0 getStarted">
+        <button
+          onClick={handleClick}
+          type="submit"
+          className="p-2 mt-4 border-0 getStarted"
+        >
           GET STARTED
         </button>
       </div>

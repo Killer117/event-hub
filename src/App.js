@@ -6,7 +6,10 @@ import Login from "./Components/AuxillaryPages/Login Page/Login";
 import ProfilePage from "./Components/AuxillaryPages/Profile Page/ProfilePage";
 import AboutUs from "./Components/AuxillaryPages/About Page/AboutUs";
 import RegisterationPage from "./Components/AuxillaryPages/Registeration Page/RegisterationPage";
+import ContactUs from "./Components/AuxillaryPages/Contact Us/ContactUs";
+import FAQs from "./Components/AuxillaryPages/FAQs/FAQs";
 
+const scrollToRef = (ref) => window.scrollTo(-100, ref.current.offsetTop);
 function App() {
   return (
     <Router>
@@ -28,6 +31,12 @@ function App() {
         </Route>
         <Route exact path="/registeration">
           <RegisterationPage />
+        </Route>
+        <Route exact path="/contact_us">
+          <ContactUs />
+        </Route>
+        <Route exact path="/faqs">
+          <FAQs />
         </Route>
       </Switch>
     </Router>

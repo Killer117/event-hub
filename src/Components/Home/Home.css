@@ -19,7 +19,10 @@
   font-size: 1.7em;
   font-weight: 900;
 }
-.underlineOnHover:hover {
+.underline {
+  border-bottom: 2px solid #10b8de;
+}
+.underlineOnHover :hover {
   border-bottom: 2px solid #10b8de;
 }
 ul {
@@ -107,7 +110,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
-  max-height: 150px;
+  margin-bottom: 80px;
 }
 .image {
   width: 100% !important;

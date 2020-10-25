@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Login() {
   useEffect(() => {
-    document.title = "Login EventHub";
+    document.title = "Login ";
   }, []);
   return (
     <div className="login_header">

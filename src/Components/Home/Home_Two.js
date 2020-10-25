@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import topBG from "../../pictures/topBG.png";
 
-function Home_Two() {
+function Home_Two({ page_two }) {
   const cardsInfo = [
     { key: 1, image: topBG, title: "Birthday", content: "Check it out" },
     { key: 2, image: topBG, title: "Birthday", content: "Check it out" },
@@ -11,7 +11,7 @@ function Home_Two() {
     { key: 5, image: topBG, title: "Birthday", content: "Check it out" },
   ];
   return (
-    <div className="home__two">
+    <div className="home__two" ref={page_two}>
       <p className="text-center events_text mt-2">Our Events</p>
       <div className="d-flex justify-content-center">
         <hr width="250px" color="black" />

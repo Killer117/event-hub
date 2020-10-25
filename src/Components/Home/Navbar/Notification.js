@@ -20,12 +20,28 @@ function Notification() {
             onMouseLeave={() => setColor(0)}
           />
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <Link className="dropdown-item" to="/">
-              Hello
-            </Link>
-            <Link className="dropdown-item" to="/">
-              Manjot
-            </Link>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <b>Pranay</b>
+                </h5>
+                <p className="card-text">Hello Bhupender</p>
+                <p className="card-text">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <b>Bhupender</b>
+                </h5>
+                <p className="card-text">Hello Pranay</p>
+                <p className="card-text">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </Link>

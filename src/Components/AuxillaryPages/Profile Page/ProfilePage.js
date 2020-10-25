@@ -1,7 +1,10 @@
-import React from "react";
-import "./Profile Page(css).css";
+import React, { useEffect } from "react";
+import "./ProfilePage.css";
 
 function ProfilePage() {
+  useEffect(() => {
+    document.title = "Profile";
+  }, []);
   return (
     <div className="profilePage">
       <div className="profilePage-wrapper">
