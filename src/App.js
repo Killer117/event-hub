@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 // import Portfolio from "./Components/PortfolioPage/Portfolio";
 import Login from "./Components/AuxillaryPages/Login Page/Login";
-// import ProfilePage from "./Components/AuxillaryPages/Profile Page/ProfilePage";
+import ProfilePage from "./Components/AuxillaryPages/Profile Page/ProfilePage";
 import AboutUs from "./Components/AuxillaryPages/About Page/AboutUs";
-// import RegisterationPage from "./Components/AuxillaryPages/Registeration Page/RegisterationPage";
+import RegisterationPage from "./Components/AuxillaryPages/Registeration Page/RegisterationPage";
 import ContactUs from "./Components/AuxillaryPages/Contact Us/ContactUs";
 import FAQs from "./Components/AuxillaryPages/FAQs/FAQs";
 
@@ -22,15 +22,15 @@ function App() {
         <Route exact path="/login">
           <Login />
         </Route>
-        {/* <Route exact path="/profile_page">
+        <Route exact path="/profile_page">
           <ProfilePage />
-        </Route> */}
+        </Route>
         <Route exact path="/about_us">
           <AboutUs />
         </Route>
-        {/* <Route exact path="/registeration">
+        <Route exact path="/registeration">
           <RegisterationPage />
-        </Route> */}
+        </Route>
         <Route exact path="/contact_us">
           <ContactUs />
         </Route>

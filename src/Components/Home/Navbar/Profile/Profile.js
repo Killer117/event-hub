@@ -6,9 +6,9 @@ import "./Profile.css";
 function Profile() {
   const [color, setColor] = useState(0);
   const profileContents = [
-    { key: 1, functionality: "Profile", to: "/" },
+    { key: 1, functionality: "Profile", to: "/profile_page" },
     { key: 2, functionality: "Login", to: "/login" },
-    { key: 3, functionality: "Registeration", to: "/" },
+    { key: 3, functionality: "Registeration", to: "/registeration" },
   ];
   return (
     <div>

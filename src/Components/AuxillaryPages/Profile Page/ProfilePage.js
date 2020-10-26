@@ -1,77 +1,57 @@
 import React, { useEffect } from "react";
+import Navbar from "../../Home/Navbar/Navbar";
 import "./ProfilePage.css";
+import imgProfile from "../../../pictures/imgProfile.png";
 
 function ProfilePage() {
   useEffect(() => {
     document.title = "Profile";
   }, []);
+  const profile_info = [
+    { key: 1, label: "E-Mail : ", data: "abcxyz123@abc.com" },
+    { key: 2, label: "Date of Birth : ", data: "xx/xx/xxxx" },
+    { key: 3, label: "Gender : ", data: "Male" },
+    { key: 4, label: "Mobile no. : ", data: "(+91) 1234567890" },
+    { key: 5, label: "Address : ", data: "WZ-123 abc xyz" },
+    { key: 6, label: "State : ", data: "Delhi" },
+    { key: 7, label: "City : ", data: "New Delhi" },
+    { key: 8, label: "Pincode : ", data: "xxxxxx" },
+  ];
   return (
     <div className="profilePage">
-      <div className="profilePage-wrapper">
-        <div className="profilePage-left">
-          <img
-            src="https://smsi.ie/wp-content/uploads/2020/01/blank-profile-pic.png"
-            alt="user"
-          />
-          <h4>Name</h4>
-        </div>
-        <div className="profilePage-right">
-          <div className="profilePage-info">
-            <h3>My Profile</h3>
-            <div className="profilePage-info_data">
-              <div className="profilePage-data">
-                <br />
-                <br />
-                <h4>Email</h4>
-                <h5>abc@gmail.com</h5>
-                <br />
-                <br />
-                <h4>Phone</h4>
-                <h5>0001-213-98765</h5>
-                <br />
-                <br />
-                <h4>Password</h4>
-                <h5>*******</h5>
-              </div>
-
-              <div className="profilePage-data profilePage-edit">
-                <span>
-                  <h2>Edit</h2>
-                  <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCXodWd9Axpg00LLFOXCPMQXg4YCXk8NrSvg&usqp=CAU" />
-                  </a>
-                </span>
-              </div>
-            </div>
-
-            <div className="profilePage-social_media">
-              <br />
-              <br />
-              <br />
-              <ul>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <Navbar />
+      <div className="profile-Content">
+        <div className="profile-bg"></div>
+        <div className="profile-info-one">
+          <img src={imgProfile} className="imgProfile" />
+          <div className="profile-info-one-content">
+            <p className="profile-info-one-content-name">
+              <b>Manjot Singh</b>
+            </p>
+            <p className="profile-info-one-content-bio">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
           </div>
         </div>
+        <p className="profile-profileheader  text-center">Profile</p>
+        <div className="profile-info-two">
+          {profile_info.map((item) => {
+            return (
+              <div
+                key={item.key}
+                className="profile-info-two-information d-flex p-2 m-3"
+              >
+                <p className="mr-2">
+                  <b>{item.label}</b>
+                </p>
+                <p className="ml-2 text-center">{item.data}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      ;
     </div>
   );
 }
-
 export default ProfilePage;

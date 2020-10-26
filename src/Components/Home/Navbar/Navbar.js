@@ -26,7 +26,7 @@ function Navbar({ activeTab }) {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <Link className="navbar-brand font-weight-bolder" to="/">
           <h1 className="name">Event Hub</h1>
         </Link>
@@ -48,7 +48,7 @@ function Navbar({ activeTab }) {
                 <li
                   className={`nav-item ${
                     activeTab === item.name ? "active" : ""
-                  } underlineOnHover`}
+                  } underlineOnHover pl-1 pr-1`}
                   key={index}
                 >
                   <Link
