@@ -15,7 +15,7 @@ function Chats() {
   return (
     <div>
       <Link className="d-flex flex-column p-2 m-1 justify-content-center align-items-center min-vw-20 min-vh-30 ">
-        <div className={window.innerWidth < 900 ? "dropdown" : "dropleft"}>
+        <div className={window.innerWidth < 990 ? "dropdown" : "dropleft"}>
           <BsFillEnvelopeFill
             size="25px"
             className="dropdown-toggle onHover"

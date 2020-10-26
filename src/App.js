@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import Portfolio from "./Components/PortfolioPage/Portfolio";
+// import Portfolio from "./Components/PortfolioPage/Portfolio";
 import Login from "./Components/AuxillaryPages/Login Page/Login";
 // import ProfilePage from "./Components/AuxillaryPages/Profile Page/ProfilePage";
 import AboutUs from "./Components/AuxillaryPages/About Page/AboutUs";
@@ -16,9 +16,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/portfolio">
+        {/* <Route exact path="/portfolio">
           <Portfolio />
-        </Route>
+        </Route> */}
         <Route exact path="/login">
           <Login />
         </Route>

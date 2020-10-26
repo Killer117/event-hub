@@ -28,6 +28,13 @@
   font-size: 4em;
   text-align: center;
 }
+@media screen and (min-width: 990px) {
+  .aboutUs-content{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 .aboutUs-Content-text {
   font-size: 1.3rem;
 }

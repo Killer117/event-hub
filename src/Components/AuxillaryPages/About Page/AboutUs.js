@@ -27,12 +27,12 @@ function AboutUs() {
     <div className="aboutUs d-flex flex-column">
       <Navbar activeTab={"About Us"} />
       <div className="aboutUs-first">
-        <img src={bgimage} className="aboutUs-image" alt="..." />
+        <img src={bgimage} className="aboutUs-image" alt="photos" />
         <div className="aboutUs-image-content">
           <p className="aboutUs-text">About Us</p>
         </div>
       </div>
-      <div className="d-flex flex-column mt-3">
+      <div className="d-flex flex-column mt-3 aboutUs-content">
         {aboutContent.map((item) => {
           return (
             <div

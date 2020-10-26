@@ -21,7 +21,7 @@ function ContactUs() {
           <p className="contactUs-text-by">-Event Hub Team</p>
         </div>
       </div>
-      <div className="d-flex ml-3 flex-row contactUs-details justify-content-between m-4">
+      <div className={`d-flex ml-3 ${window.innerWidth< 700?"flex-column justify-content-center":"flex-row"} contactUs-details justify-content-between m-4`}>
         <div className="d-flex w-auto flex-row">
           <ul className="p-3">
             <li className="justify-content-center align-items-center">
@@ -52,7 +52,7 @@ function ContactUs() {
           </ul>
         </div>
       </div>
-      <SocialMediaHandles />
+      <SocialMediaHandles className="contactUs-socialMedia" />
     </div>
   );
 }

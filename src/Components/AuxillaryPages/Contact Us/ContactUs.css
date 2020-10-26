@@ -1,6 +1,6 @@
 .contactUs {
   width: 100%;
-  height: max-content;
+  height: 100%;
   color: black;
   background: white !important;
 }
@@ -32,14 +32,12 @@
   font-size: 1em;
   margin-left: 30%;
 }
-.contactUs-details {
-  display: flex;
-}
 ul {
   list-style: none;
   color: black;
 }
 .contactUs-socialMedia {
   bottom: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 0% !important;
+  margin-top: auto !important;
 }
