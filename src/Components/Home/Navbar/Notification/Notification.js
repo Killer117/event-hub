@@ -53,14 +53,16 @@ function Notification() {
             {notificationContents.map((item) => {
               return (
                 <div className="notification-card">
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <b>{item.title}</b>
-                    </h5>
-                    <p className="card-text">{item.body}</p>
-                    <p className="card-text">
-                      <small className="text-muted">{`${item.timeAgo} mins ago`}</small>
-                    </p>
+                  <div className="card-body d-flex flex-row justify-content-between">
+                    <div className="d-flex flex-wrap flex-column">
+                     <h5 className="card-title">
+                        <b>{item.title}</b>
+                      </h5>
+                      <p className="card-text">{item.body}</p>
+                      <p className="card-text">
+                        <small className="text-muted">{`${item.timeAgo} mins ago`}</small>
+                      </p>
+                    </div>
                   </div>
                   <hr />
                 </div>

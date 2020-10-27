@@ -23,10 +23,10 @@ function ProfilePage() {
       <div className="profile-Content">
         <div className="profile-bg"></div>
         <div className="profile-info-one">
-          <img src={imgProfile} className="imgProfile" />
+          <img src={imgProfile} className="imgProfile" alt="photos"/>
           <div className="profile-info-one-content">
             <p className="profile-info-one-content-name">
-              <b>Manjot Singh</b>
+              <b>Name</b>
             </p>
             <p className="profile-info-one-content-bio">
               Lorem Ipsum is simply dummy text of the printing and typesetting
