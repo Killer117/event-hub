@@ -13,7 +13,7 @@ function RegisterationPage() {
       <div className="regPage-bgImage">
         <div className="regPage-regForm">
           <p className="regPage-heading">Register</p>
-          <form>
+          <form className="regPage-form ">
             <div className="form-row">
               <div className="form-group col-md-6 col-sm-6 col-xs-6">
                 <label for="inputEmail4">First Name</label>
